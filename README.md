@@ -1,4 +1,4 @@
-## Setup
+# Setup
 
 ## Generate Secret Key
 ```
