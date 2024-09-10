@@ -1,6 +1,6 @@
 ## Setup
 
-#### - Generate Secret Key
+## Generate Secret Key
 ```
 python manage.py shell
 from django.core.management.utils import get_random_secret_key
@@ -8,7 +8,7 @@ print(get_random_secret_key())
 exit()
 ```
 
-### Create .env
+## Create .env
 #### ALL VARS
 ```
 SECRET_KEY=
@@ -25,14 +25,21 @@ POSTGRES_USER=
 POSTGRES_PASSWORD=
 ```
 
-### Build
+## Build
+```sh
 docker-compose build
-### Run
+```
+## Run
+```sh
 docker-compose up -d
+```
 
-### Create superuser
+## Create superuser
+```sh
 docker exec -it chat python3 manage.py createsuperuser
+```
 
-### Create lobby
+## Create lobby
+```sh
 docker exec -it chat_db psql -h db -U postgres -d rtchat -c "INSERT INTO a_rtchat_chatgroup (group_name, is_private, admin_id, groupchat_name) VALUES ('Lobby', '0', NULL, NULL);"
-
+```
