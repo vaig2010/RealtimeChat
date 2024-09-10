@@ -1,0 +1,11 @@
+Django
+pillow
+django-cleanup
+django-allauth
+django-htmx
+channels-redis
+daphne
+shortuuid
+psycopg2
+python-dotenv
+whitenoise
