@@ -10,6 +10,7 @@ exit()
 
 ### Create .env
 #### ALL VARS
+```
 SECRET_KEY=
 ENVIRONMENT=prod
 DB_NAME=
@@ -22,6 +23,7 @@ ALLOWED_HOSTS=
 CSRF_TRUSTED_ORIGINS=
 POSTGRES_USER=
 POSTGRES_PASSWORD=
+```
 
 ### Build
 docker-compose build
